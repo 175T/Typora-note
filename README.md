@@ -1,2 +1,3 @@
 # Typora-note
-* 日常学习笔记记录
+* Spring Boot 框架学习笔记
+* 基础项目框架搭建记录
