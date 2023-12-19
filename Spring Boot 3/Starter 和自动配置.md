@@ -236,7 +236,7 @@ public class WebMvcAutoConfiguration {
     * 在 Spring Boot 项目启动时，从 `spring-boot-autoconfigure` 包中的 `META-INF\spring\org.springframework.boot.autoconfigure.AutoConfiguration.imports` 文件中获取  `xxxAutoConfiguration`  自动配置类，将其导入 spring 容器
 
 
-![自动配置](F:\Typora-note\img\image-20231212163631496.png)
+![自动配置](\Git-repository\Typora-note\img\image-20231212163631496.png)
 
 * 导入的 `xxxAutoConfiguration` 自动配置类使用 `@ConditionalOnxxx` 注解实现按需加载
 * `xxxAutoConfiguration` 自动配置类的作用
