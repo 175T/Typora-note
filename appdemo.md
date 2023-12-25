@@ -1,5 +1,7 @@
 ### appdemo 开发过程记录
 
+
+
 #### 基于注解实现登陆拦截器
 
 * 实现一个自定义注解
@@ -215,7 +217,7 @@ int SCOPE_REQUEST = 0;		// 表示在当前请求中可用
 * [日志](F:\Typora-note\Spring Boot 3\日志.md)
 * 常见异常信息：
 
-<img src="F:\Typora-note\img\image-20231208171548672.png" alt="image-20231208171548672"  />
+<img src="\Git-repository\Typora-note\img\image-20231208171548672.png" alt="image-20231208171548672"  />
 
 ​		表示 log4j2 中的依赖包 `log4j-slf4j-impl` 和 `log4j-to-slf4j` 冲突，`log4j-to-slf4j` 属于 `spring-boot-starter-logging`
 
@@ -229,7 +231,7 @@ int SCOPE_REQUEST = 0;		// 表示在当前请求中可用
 
 * 在 repository 模块中的 POM 文件中引入插件
 
-  ```
+  ```xml
   <plugin>
       <groupId>org.mybatis.generator</groupId>
       <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -274,11 +276,11 @@ int SCOPE_REQUEST = 0;		// 表示在当前请求中可用
 
 * 常见异常
 
-![image-20231208180344699](F:\Typora-note\img\image-20231208180344699.png)
+![image-20231208180344699](\Git-repository\Typora-note\img\image-20231208180344699.png)
 
 ​		异常信息：当前项目和插件组中无法发现前缀为 mybatis-generator 的插件，即在 F:\maven\repository 中无法获取到指定的插件。
 
-![image-20231208180624039](F:\Typora-note\img\image-20231208180624039.png)
+![image-20231208180624039](\Git-repository\Typora-note\img\image-20231208180624039.png)
 
 ​		异常信息：
 
@@ -377,7 +379,7 @@ springdoc:
 
 - 直接在实体类上使用注解规定参数的格式
 
-```
+```java
 @Data
 public class User extends BaseEntity {
 
@@ -408,3 +410,4 @@ public class User extends BaseEntity {
 ```
 
 * [hibernate-validator 中的注解](F:\Typora-note\hibernate-validator.md)
+

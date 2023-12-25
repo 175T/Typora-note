@@ -2,7 +2,6 @@
 
 > Starter（一站式场景启动器）其中包括一系列可以集成到应用中的依赖项，可以快速启动 Spring 组件和框架，通过简单配置实现开箱即用
 
-* 
 * Spring Boot Starter 一般包含的组件
   * 自动配置模块，实现自动配置
   * 依赖项，为自动配置模块提供的所有依赖项
@@ -40,7 +39,7 @@
 
 * 默认的命名规则
 
-  > Spring Boot 的自动配置类的命名约定：*xxxConfiguration* 
+  > Spring Boot 的自动配置类的命名约定：*xxxAutoConfiguration* 
 
 * 自动配置类需要注册到 Spring Boot 指定的自动配置文件中
 
@@ -223,7 +222,7 @@ public class WebMvcAutoConfiguration {
   3. `spring-boot-autoconfigure` 包含 Spring Boot 开发场景需要的全部配置
 
 
-![image-20231212163340276](F:\Typora-note\img\image-20231212163340276.png)
+![image-20231212163340276](img\image-20231212163340276.png)
 
 * `@SpringBootApplication` 注解的组成
 
@@ -236,7 +235,7 @@ public class WebMvcAutoConfiguration {
     * 在 Spring Boot 项目启动时，从 `spring-boot-autoconfigure` 包中的 `META-INF\spring\org.springframework.boot.autoconfigure.AutoConfiguration.imports` 文件中获取  `xxxAutoConfiguration`  自动配置类，将其导入 spring 容器
 
 
-![自动配置](\Git-repository\Typora-note\img\image-20231212163631496.png)
+![自动配置](img\image-20231212163631496.png)
 
 * 导入的 `xxxAutoConfiguration` 自动配置类使用 `@ConditionalOnxxx` 注解实现按需加载
 * `xxxAutoConfiguration` 自动配置类的作用
